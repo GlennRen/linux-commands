@@ -5,6 +5,7 @@
 	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="text/javascript" src="scripts.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<section class="container">
@@ -23,147 +24,147 @@
 				<tr>
 					<td>ls</td>
 					<td>List files in directory; current directory is used if no directory is supplied</td>
-					<td>$ ls ~/Desktop</td>
+					<td class="example">$ ls ~/Desktop</td>
 				</tr>
 				<tr>
 					<td>cd</td>
 					<td>Change the current working directory</td>
-					<td>$ cd /home/centos/</td>
+					<td class="example">$ cd /home/centos/</td>
 				</tr>
 				<tr>
 					<td>pwd</td>
 					<td>Print the current working directory</td>
-					<td>$ pwd<br>/home/centos/</td>
+					<td class="example">$ pwd<br>/home/centos/</td>
 				</tr>
 				<tr>
 					<td>cp</td>
 					<td>Copy a file</td>
-					<td>$ cp orig.txt copy.txt</td>
+					<td class="example">$ cp orig.txt copy.txt</td>
 				</tr>
 				<tr>
 					<td>mv</td>
 					<td>Move or rename a file</td>
-					<td>$ mv a.txt<br>Desktop/b.txt</td>
+					<td class="example">$ mv a.txt<br>Desktop/b.txt</td>
 				</tr>
 				<tr>
 					<td>rm</td>
 					<td>Delete a file</td>
-					<td>$ rm file.txt</td>
+					<td class="example">$ rm file.txt</td>
 				</tr>
 				<tr>
 					<td>mkdir</td>
 					<td>Create a directory</td>
-					<td>$ mkdir examples/</td>
+					<td class="example">$ mkdir examples/</td>
 				</tr>
 				<tr>
 					<td>rmdir</td>
 					<td>Delete a directory (must be empty)</td>
-					<td>$ rmdir examples/</td>
+					<td class="example">$ rmdir examples/</td>
 				</tr>
 				<tr>
 					<td>cat</td>
 					<td>Print one or more files to STDOUT</td>
-					<td>$ cat file.txt</td>
+					<td class="example">$ cat file.txt</td>
 				</tr>
 				<tr>
 					<td>grep</td>
 					<td>Search for text within a file or STDIN</td>
-					<td>$ grep 10.10.1.1<br>/var/log/apache/*</td>
+					<td class="example">$ grep 10.10.1.1<br>/var/log/apache/*</td>
 				</tr>
 				<tr>
 					<td>file</td>
 					<td>Identify the file type</td>
-					<td>$ file image.jpg<br>image.jpg: JPEG Image Data</td>
+					<td class="example">$ file image.jpg<br>image.jpg: JPEG Image Data</td>
 				</tr>
 				<tr>
 					<td>head</td>
 					<td>Display the first 10 lines of a file (use "-n X" to display first X lines)</td>
-					<td>$ head /etc/passwd<br>$ head -n 5 /etc/passwd</td>
+					<td class="example">$ head /etc/passwd<br>$ head -n 5 /etc/passwd</td>
 				</tr>
 				<tr>
 					<td>tail</td>
 					<td>Display the last 10 lines of a file (use "-n x" to display first X lines)</td>
-					<td>$ rm file.txt</td>
+					<td class="example">$ rm file.txt</td>
 				</tr>
 				<tr>
 					<td>tail -F</td>
 					<td>Display new data as it is appended to the end of a file (useful for watching logs)</td>
-					<td>$ tail -F<br>/var/log/messages</td>
+					<td class="example">$ tail -F<br>/var/log/messages</td>
 				</tr>
 				<tr>
 					<td>less</td>
 					<td>Display text from STDIN or a file one screen at a time</td>
-					<td>$ less /etc/passwd<br>$cat file | less</td>
+					<td class="example">$ less /etc/passwd<br>$cat file | less</td>
 				</tr>
 				<tr>
 					<td>ps</td>
 					<td>Display a list of running processes</td>
-					<td>$ ps aux</td>
+					<td class="example">$ ps aux</td>
 				</tr>
 				<tr>
 					<td>lsof</td>
 					<td>Display a list of open files</td>
-					<td>$ lsof</td>
+					<td class="example">$ lsof</td>
 				</tr>
 				<tr>
 					<td>netstat</td>
 					<td>Display TCP &amp; UDP connection info</td>
-					<td>$ netstat -na</td>
+					<td class="example">$ netstat -na</td>
 				</tr>
 				<tr>
 					<td>ifconfig</td>
 					<td>Display information about your network interfaces, such as your IP address</td>
-					<td>$ ifconfig</td>
+					<td class="example">$ ifconfig</td>
 				</tr>
 				<tr>
 					<td>su</td>
 					<td>Temporarily switch to a different user. Root is used if no username is specified</td>
-					<td>$ su - [username]</td>
+					<td class="example">$ su - [username]</td>
 				</tr>
 				<tr>
 					<td>sort</td>
 					<td>Sort the contents of a file or STDIN</td>
-					<td>$ sort /etc/passwd</td>
+					<td class="example">$ sort /etc/passwd</td>
 				</tr>
 				<tr>
 					<td>uniq</td>
 					<td>Remove duplicate lines from a sorted file or sorted STDIN</td>
-					<td>$ uniq mylist.txt</td>
+					<td class="example">$ uniq mylist.txt</td>
 				</tr>
 				<tr>
 					<td>chmod</td>
 					<td>Change the permissions (mode) of a file or directory</td>
-					<td>$ chmod +w file.txt</td>
+					<td class="example">$ chmod +w file.txt</td>
 				</tr>
 				<tr>
 					<td>stat</td>
 					<td>View detailed information about a file</td>
-					<td>$ stat file.txt</td>
+					<td class="example">$ stat file.txt</td>
 				</tr>
 				<tr>
 					<td>ping</td>
 					<td>Send ICMP ECHO_REQUEST to a network host to test connectivity</td>
-					<td>$ ping 10.1.1.1</td>
+					<td class="example">$ ping 10.1.1.1</td>
 				</tr>
 				<tr>
 					<td>whoami</td>
 					<td>Display the current username</td>
-					<td>$ whoami</td>
+					<td class="example">$ whoami</td>
 				</tr>
 				<tr>
 					<td>passwd</td>
 					<td>Change a user's password, or your own if no username is specified</td>
-					<td>$ passwd [username]</td>
+					<td class="example">$ passwd [username]</td>
 				</tr>
 				<tr>
 					<td>kill</td>
 					<td>Terminate or send a signal to a running process by process ID(PID)</td>
-					<td>$ kill 8573</td>
+					<td class="example">$ kill 8573</td>
 				</tr>
 				<tr>
 					<td>ln</td>
 					<td>Create a hard or symbolic link to a file</td>
-					<td>$ ln [file] [link]</td>
+					<td class="example">$ ln [file] [link]</td>
 				</tr>
 			</tbody>
 		</table>

@@ -29,3 +29,8 @@ h2 {
   border-bottom: 1px solid #ddd;
   position: relative;
 }
+
+.example {
+  font-family: 'Inconsolata',;
+  font-weight: 400;
+}
