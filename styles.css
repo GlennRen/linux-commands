@@ -1,6 +1,14 @@
+body {
+  width: 100%;
+}
+
 h2 {
   color: #26a69a;
   font-weight: 300; 
+}
+
+.container {
+  width: 900px;
 }
 
 .bash {
