@@ -2,7 +2,12 @@
 <html>
 <head>
 	<title>Linux Core Commands</title>
-	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+          
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="text/javascript" src="scripts.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -12,7 +17,7 @@
 		<h2>Linux Core Commands</h2>
 		<input type="search" class="light-table-filter" data-table="order-table" placeholder="Search" />
 
-		<table class="order-table">
+		<table class="highlight order-table center-al">
 			<thead>
 				<tr>
 					<th>Command</th>
@@ -24,147 +29,147 @@
 				<tr>
 					<td>ls</td>
 					<td>List files in directory; current directory is used if no directory is supplied</td>
-					<td class="example">$ ls ~/Desktop</td>
+					<td><span class="bash">$</span> ls ~/Desktop</td>
 				</tr>
 				<tr>
 					<td>cd</td>
 					<td>Change the current working directory</td>
-					<td class="example">$ cd /home/centos/</td>
+					<td><span class="bash">$</span> cd /home/centos/</td>
 				</tr>
 				<tr>
 					<td>pwd</td>
 					<td>Print the current working directory</td>
-					<td class="example">$ pwd<br>/home/centos/</td>
+					<td><span class="bash">$</span> pwd<br>/home/centos/</td>
 				</tr>
 				<tr>
 					<td>cp</td>
 					<td>Copy a file</td>
-					<td class="example">$ cp orig.txt copy.txt</td>
+					<td><span class="bash">$</span> cp orig.txt copy.txt</td>
 				</tr>
 				<tr>
 					<td>mv</td>
 					<td>Move or rename a file</td>
-					<td class="example">$ mv a.txt<br>Desktop/b.txt</td>
+					<td><span class="bash">$</span> mv a.txt<br>Desktop/b.txt</td>
 				</tr>
 				<tr>
 					<td>rm</td>
 					<td>Delete a file</td>
-					<td class="example">$ rm file.txt</td>
+					<td><span class="bash">$</span> rm file.txt</td>
 				</tr>
 				<tr>
 					<td>mkdir</td>
 					<td>Create a directory</td>
-					<td class="example">$ mkdir examples/</td>
+					<td><span class="bash">$</span> mkdir examples/</td>
 				</tr>
 				<tr>
 					<td>rmdir</td>
 					<td>Delete a directory (must be empty)</td>
-					<td class="example">$ rmdir examples/</td>
+					<td><span class="bash">$</span> rmdir examples/</td>
 				</tr>
 				<tr>
 					<td>cat</td>
 					<td>Print one or more files to STDOUT</td>
-					<td class="example">$ cat file.txt</td>
+					<td><span class="bash">$</span> cat file.txt</td>
 				</tr>
 				<tr>
 					<td>grep</td>
 					<td>Search for text within a file or STDIN</td>
-					<td class="example">$ grep 10.10.1.1<br>/var/log/apache/*</td>
+					<td><span class="bash">$</span> grep 10.10.1.1<br>/var/log/apache/*</td>
 				</tr>
 				<tr>
 					<td>file</td>
 					<td>Identify the file type</td>
-					<td class="example">$ file image.jpg<br>image.jpg: JPEG Image Data</td>
+					<td><span class="bash">$</span> file image.jpg<br>image.jpg: JPEG Image Data</td>
 				</tr>
 				<tr>
 					<td>head</td>
 					<td>Display the first 10 lines of a file (use "-n X" to display first X lines)</td>
-					<td class="example">$ head /etc/passwd<br>$ head -n 5 /etc/passwd</td>
+					<td><span class="bash">$</span> head /etc/passwd<br><span class="bash">$</span> head -n 5 /etc/passwd</td>
 				</tr>
 				<tr>
 					<td>tail</td>
 					<td>Display the last 10 lines of a file (use "-n x" to display first X lines)</td>
-					<td class="example">$ rm file.txt</td>
+					<td><span class="bash">$</span> rm file.txt</td>
 				</tr>
 				<tr>
 					<td>tail -F</td>
 					<td>Display new data as it is appended to the end of a file (useful for watching logs)</td>
-					<td class="example">$ tail -F<br>/var/log/messages</td>
+					<td><span class="bash">$</span> tail -F<br>/var/log/messages</td>
 				</tr>
 				<tr>
 					<td>less</td>
 					<td>Display text from STDIN or a file one screen at a time</td>
-					<td class="example">$ less /etc/passwd<br>$cat file | less</td>
+					<td><span class="bash">$</span> less /etc/passwd<br><span class="bash">$</span> cat file | less</td>
 				</tr>
 				<tr>
 					<td>ps</td>
 					<td>Display a list of running processes</td>
-					<td class="example">$ ps aux</td>
+					<td><span class="bash">$</span> ps aux</td>
 				</tr>
 				<tr>
 					<td>lsof</td>
 					<td>Display a list of open files</td>
-					<td class="example">$ lsof</td>
+					<td><span class="bash">$</span> lsof</td>
 				</tr>
 				<tr>
 					<td>netstat</td>
 					<td>Display TCP &amp; UDP connection info</td>
-					<td class="example">$ netstat -na</td>
+					<td><span class="bash">$</span> netstat -na</td>
 				</tr>
 				<tr>
 					<td>ifconfig</td>
 					<td>Display information about your network interfaces, such as your IP address</td>
-					<td class="example">$ ifconfig</td>
+					<td><span class="bash">$</span> ifconfig</td>
 				</tr>
 				<tr>
 					<td>su</td>
 					<td>Temporarily switch to a different user. Root is used if no username is specified</td>
-					<td class="example">$ su - [username]</td>
+					<td><span class="bash">$</span> su - [username]</td>
 				</tr>
 				<tr>
 					<td>sort</td>
 					<td>Sort the contents of a file or STDIN</td>
-					<td class="example">$ sort /etc/passwd</td>
+					<td><span class="bash">$</span> sort /etc/passwd</td>
 				</tr>
 				<tr>
 					<td>uniq</td>
 					<td>Remove duplicate lines from a sorted file or sorted STDIN</td>
-					<td class="example">$ uniq mylist.txt</td>
+					<td><span class="bash">$</span> uniq mylist.txt</td>
 				</tr>
 				<tr>
 					<td>chmod</td>
 					<td>Change the permissions (mode) of a file or directory</td>
-					<td class="example">$ chmod +w file.txt</td>
+					<td><span class="bash">$</span> chmod +w file.txt</td>
 				</tr>
 				<tr>
 					<td>stat</td>
 					<td>View detailed information about a file</td>
-					<td class="example">$ stat file.txt</td>
+					<td><span class="bash">$</span> stat file.txt</td>
 				</tr>
 				<tr>
 					<td>ping</td>
 					<td>Send ICMP ECHO_REQUEST to a network host to test connectivity</td>
-					<td class="example">$ ping 10.1.1.1</td>
+					<td><span class="bash">$</span> ping 10.1.1.1</td>
 				</tr>
 				<tr>
 					<td>whoami</td>
 					<td>Display the current username</td>
-					<td class="example">$ whoami</td>
+					<td><span class="bash">$</span> whoami</td>
 				</tr>
 				<tr>
 					<td>passwd</td>
 					<td>Change a user's password, or your own if no username is specified</td>
-					<td class="example">$ passwd [username]</td>
+					<td><span class="bash">$</span> passwd [username]</td>
 				</tr>
 				<tr>
 					<td>kill</td>
 					<td>Terminate or send a signal to a running process by process ID(PID)</td>
-					<td class="example">$ kill 8573</td>
+					<td><span class="bash">$</span> kill 8573</td>
 				</tr>
 				<tr>
 					<td>ln</td>
 					<td>Create a hard or symbolic link to a file</td>
-					<td class="example">$ ln [file] [link]</td>
+					<td><span class="bash">$</span> ln [file] [link]</td>
 				</tr>
 			</tbody>
 		</table>
