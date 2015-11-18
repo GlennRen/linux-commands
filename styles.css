@@ -7,14 +7,6 @@ h2 {
   color:#26a69a;
 }
 
-.container {
-  width: 1080px;
-}
-
-.order-table td:first-child {
-  width: 200px;
-}
-
 .order-table td:first-child, .order-table td:nth-child(3) {
   font-family: Inconsolata, serif;
 }
